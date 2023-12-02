@@ -1,0 +1,11 @@
+"""
+All the modules that we use inside this monorepo
+"""
+# RE2 CPP
+bazel_dep(name = "re2", version = "2021-09-01")
+
+# Gflags
+bazel_dep(name = "gflags", version = "2.2.2")
+
+# Abseil (my wish is to have Folly running in Bazel Central Registry later)
+bazel_dep(name = "abseil-cpp", version = "20230802.0", repo_name = "com_google_absl")
