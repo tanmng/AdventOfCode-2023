@@ -16,3 +16,11 @@ cc_binary(
         "@re2//:re2",
     ],
 )
+
+cc_binary(
+    name = "day03",
+    srcs = ["day03/main.cpp"],
+    deps = [
+        "@re2//:re2",
+    ],
+)
