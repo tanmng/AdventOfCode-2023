@@ -42,3 +42,12 @@ cc_binary(
         "@gflags//:gflags",
     ],
 )
+
+cc_binary(
+    name = "day06",
+    srcs = ["day06/main.cpp"],
+    deps = [
+        "@re2//:re2",
+        "@gflags//:gflags",
+    ],
+)
