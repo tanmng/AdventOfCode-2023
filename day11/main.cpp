@@ -9,7 +9,7 @@ DEFINE_bool(part2, false, "Run the binary to solve part 2");
 
 using namespace std;
 namespace {
-const size_t expansionRatePart1 = 2, expansionRatePart2 = 1000000;
+const size_t expansionRatePart1 = 2 - 1, expansionRatePart2 = 1000000 - 1;
 typedef pair<size_t, size_t> Coordinate;
 const char kGalaxy = '#';
 const re2::RE2 kEmptyLineRe("^\\.+$");
@@ -25,10 +25,10 @@ size_t distanceOnAxis(const size_t smallerVal, size_t largerVal,
       // Need expansion on this axis
       if (FLAGS_part2) {
         // Part 2
-        result += expansionRatePart2 - 1;
+        result += expansionRatePart2;
       } else {
         // Part 1
-        result += expansionRatePart1 - 1;
+        result += expansionRatePart1;
       }
     }
   }
