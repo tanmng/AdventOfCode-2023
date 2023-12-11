@@ -87,3 +87,13 @@ cc_binary(
         "@re2",
     ]
 )
+
+cc_binary(
+    name = "day11",
+    srcs = ["day11/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
