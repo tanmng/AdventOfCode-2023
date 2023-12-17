@@ -117,3 +117,18 @@ cc_binary(
         "@re2",
     ]
 )
+
+cc_binary(
+    name = "day15",
+    srcs = ["day15/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
+
+cc_binary(
+    name = "day16",
+    srcs = ["day16/main.cpp"],
+)
