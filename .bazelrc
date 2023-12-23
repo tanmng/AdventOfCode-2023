@@ -1,3 +1,6 @@
 # Enable Bzlmod for every Bazel command
 common --enable_bzlmod
 
+# It's time to start using latest version for real
+build --cxxopt=-std=c++17
+

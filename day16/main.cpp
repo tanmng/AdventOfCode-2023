@@ -214,11 +214,10 @@ int main(int argc, char **argv) {
   for (size_t i = 0; i < lines.at(0).size(); ++i) {
     // From the top edge
     answerPart2 =
-        max(answerPart2, energizing(lines, {i,0}, TravelDirection::kSouth));
+        max(answerPart2, energizing(lines, {i, 0}, TravelDirection::kSouth));
     // From the right edge
-    answerPart2 =
-        max(answerPart2, energizing(lines, {i, lines.size() - 1},
-                                    TravelDirection::kNorth));
+    answerPart2 = max(answerPart2, energizing(lines, {i, lines.size() - 1},
+                                              TravelDirection::kNorth));
   }
 
   cout << "Part 2: " << answerPart2 << endl;

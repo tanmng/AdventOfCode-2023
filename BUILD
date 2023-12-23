@@ -132,3 +132,83 @@ cc_binary(
     name = "day16",
     srcs = ["day16/main.cpp"],
 )
+
+cc_binary(
+    name = "day17",
+    srcs = ["day17/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
+
+cc_binary(
+    name = "day18",
+    srcs = ["day18/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
+
+cc_binary(
+    name = "day19",
+    srcs = ["day19/main.cpp"],
+    deps = [
+        "@gflags",
+        "@re2",
+        "day19_lib",
+    ]
+)
+
+cc_library(
+    name = "day19_lib",
+    srcs = ["day19/lib.cpp"],
+    hdrs = ["day19/lib.h"],
+    deps = [
+        "@com_google_absl//absl/strings",
+        "@re2",
+    ],
+)
+
+cc_binary(
+    name = "day20",
+    srcs = ["day20/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
+
+cc_binary(
+    name = "day21",
+    srcs = ["day21/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
+
+cc_binary(
+    name = "day22",
+    srcs = ["day22/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
+
+cc_binary(
+    name = "day23",
+    srcs = ["day23/main.cpp"],
+    deps = [
+        "@com_google_absl//absl/hash",
+        "@gflags",
+        "@re2",
+    ]
+)
